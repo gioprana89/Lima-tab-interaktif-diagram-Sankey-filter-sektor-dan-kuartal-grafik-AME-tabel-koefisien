@@ -1,0 +1,287 @@
+{
+  "Status": "Pre-lock audit: arithmetically replicated; accounting/YTD semantics remain conditional",
+  "Date": "2026-11-11",
+  "Source": "IDX_Panel_Utama_2024Q3_2026Q3.csv",
+  "Source_SHA256": "d5caefba78bc8e9303ea646ada1eb7317b834f8915117ec4140cbe6041f6463a",
+  "Panel_rows": 6243,
+  "Panel_ticker_codes": 799,
+  "QProfit_built": 5290,
+  "QProfitAttributable_built": 5288,
+  "QSales_built": 5259,
+  "QProfit_missing": {
+    "Prior YTD quarter unavailable": 953
+  },
+  "Ticker_baseline": {
+    "Pairs": 4469,
+    "Firms": 762,
+    "Recovery": 426,
+    "Still_loss": 858,
+    "At_risk_loss": 1284,
+    "Recovery_rate": 0.3317757009345794,
+    "Loss_onset": 388,
+    "Still_profit": 2790,
+    "At_risk_profit": 3178,
+    "Loss_onset_rate": 0.12208936438011328,
+    "Zero_related": 7
+  },
+  "Entity_GOTO_only_sensitivity": {
+    "Pairs": 4463,
+    "Firms": 761,
+    "Recovery": 425,
+    "Still_loss": 855,
+    "At_risk_loss": 1280,
+    "Recovery_rate": 0.33203125,
+    "Loss_onset": 388,
+    "Still_profit": 2788,
+    "At_risk_profit": 3176,
+    "Loss_onset_rate": 0.12216624685138538,
+    "Zero_related": 7
+  },
+  "Main_Alt_comparable_pairs": 4466,
+  "Main_Alt_transitions_different": 115,
+  "QSales_negative_total": 47,
+  "QSales_negative_nonQ1": 46,
+  "Q4_types": {
+    "A": 1225,
+    "U": 20
+  },
+  "Duplicate_fingerprint_pairs": [
+    {
+      "Code_1": "GOTO",
+      "Code_2": "GOTOM",
+      "Identical_Quarters": 8
+    }
+  ],
+  "Balance_identity_gt_0p1pct_assets_count": 0,
+  "Main_matrix": {
+    "Laba -> Laba": 2790,
+    "Laba -> Nol": 4,
+    "Laba -> Rugi": 388,
+    "Nol -> Laba": 2,
+    "Nol -> Rugi": 1,
+    "Rugi -> Laba": 426,
+    "Rugi -> Rugi": 858
+  },
+  "Sensitivities": [
+    {
+      "Scenario": "Unadjusted ticker-level baseline",
+      "Pairs": 4469,
+      "Firms": 762,
+      "Recovery": 426,
+      "Still_loss": 858,
+      "At_risk_loss": 1284,
+      "Recovery_rate": 0.3317757009345794,
+      "Loss_onset": 388,
+      "Still_profit": 2790,
+      "At_risk_profit": 3178,
+      "Loss_onset_rate": 0.12208936438011328,
+      "Zero_related": 7
+    },
+    {
+      "Scenario": "Entity-level GOTO only (exclude GOTOM)",
+      "Pairs": 4463,
+      "Firms": 761,
+      "Recovery": 425,
+      "Still_loss": 855,
+      "At_risk_loss": 1280,
+      "Recovery_rate": 0.33203125,
+      "Loss_onset": 388,
+      "Still_profit": 2788,
+      "At_risk_profit": 3176,
+      "Loss_onset_rate": 0.12216624685138538,
+      "Zero_related": 7
+    },
+    {
+      "Scenario": "Exclude transitions ending 2026Q3",
+      "Pairs": 4018,
+      "Firms": 762,
+      "Recovery": 380,
+      "Still_loss": 794,
+      "At_risk_loss": 1174,
+      "Recovery_rate": 0.32367972742759793,
+      "Loss_onset": 360,
+      "Still_profit": 2478,
+      "At_risk_profit": 2838,
+      "Loss_onset_rate": 0.12684989429175475,
+      "Zero_related": 6
+    },
+    {
+      "Scenario": "Exclude Q4 ending transitions",
+      "Pairs": 3750,
+      "Firms": 756,
+      "Recovery": 359,
+      "Still_loss": 720,
+      "At_risk_loss": 1079,
+      "Recovery_rate": 0.33271547729379053,
+      "Loss_onset": 287,
+      "Still_profit": 2378,
+      "At_risk_profit": 2665,
+      "Loss_onset_rate": 0.1076923076923077,
+      "Zero_related": 6
+    },
+    {
+      "Scenario": "Exclude Q4-adjacent transitions",
+      "Pairs": 2631,
+      "Firms": 756,
+      "Recovery": 217,
+      "Still_loss": 513,
+      "At_risk_loss": 730,
+      "Recovery_rate": 0.29726027397260274,
+      "Loss_onset": 197,
+      "Still_profit": 1698,
+      "At_risk_profit": 1895,
+      "Loss_onset_rate": 0.10395778364116096,
+      "Zero_related": 6
+    },
+    {
+      "Scenario": "Exclude pairs with changed-first-source flag",
+      "Pairs": 4067,
+      "Firms": 761,
+      "Recovery": 392,
+      "Still_loss": 773,
+      "At_risk_loss": 1165,
+      "Recovery_rate": 0.336480686695279,
+      "Loss_onset": 360,
+      "Still_profit": 2536,
+      "At_risk_profit": 2896,
+      "Loss_onset_rate": 0.12430939226519337,
+      "Zero_related": 6
+    },
+    {
+      "Scenario": "Exclude pairs adjoining negative QSales flag",
+      "Pairs": 4384,
+      "Firms": 761,
+      "Recovery": 417,
+      "Still_loss": 825,
+      "At_risk_loss": 1242,
+      "Recovery_rate": 0.3357487922705314,
+      "Loss_onset": 380,
+      "Still_profit": 2755,
+      "At_risk_profit": 3135,
+      "Loss_onset_rate": 0.12121212121212122,
+      "Zero_related": 7
+    },
+    {
+      "Scenario": "Only 2025 transition endpoints",
+      "Pairs": 2600,
+      "Firms": 755,
+      "Recovery": 224,
+      "Still_loss": 520,
+      "At_risk_loss": 744,
+      "Recovery_rate": 0.3010752688172043,
+      "Loss_onset": 243,
+      "Still_profit": 1609,
+      "At_risk_profit": 1852,
+      "Loss_onset_rate": 0.13120950323974082,
+      "Zero_related": 4
+    },
+    {
+      "Scenario": "Only 2026 transition endpoints",
+      "Pairs": 1869,
+      "Firms": 726,
+      "Recovery": 202,
+      "Still_loss": 338,
+      "At_risk_loss": 540,
+      "Recovery_rate": 0.37407407407407406,
+      "Loss_onset": 145,
+      "Still_profit": 1181,
+      "At_risk_profit": 1326,
+      "Loss_onset_rate": 0.10935143288084465,
+      "Zero_related": 3
+    },
+    {
+      "Scenario": "Neutral band ±0.0100% of respective assets",
+      "Pairs": 4469,
+      "Firms": 762,
+      "Recovery": 413,
+      "Still_loss": 851,
+      "At_risk_loss": 1264,
+      "Recovery_rate": 0.32674050632911394,
+      "Loss_onset": 373,
+      "Still_profit": 2760,
+      "At_risk_profit": 3133,
+      "Loss_onset_rate": 0.11905521864028087,
+      "Zero_related": 72
+    },
+    {
+      "Scenario": "Neutral band ±0.100% of respective assets",
+      "Pairs": 4469,
+      "Firms": 762,
+      "Recovery": 328,
+      "Still_loss": 778,
+      "At_risk_loss": 1106,
+      "Recovery_rate": 0.2965641952983725,
+      "Loss_onset": 283,
+      "Still_profit": 2558,
+      "At_risk_profit": 2841,
+      "Loss_onset_rate": 0.09961281239000352,
+      "Zero_related": 522
+    },
+    {
+      "Scenario": "Neutral band ±0.500% of respective assets",
+      "Pairs": 4469,
+      "Firms": 762,
+      "Recovery": 176,
+      "Still_loss": 572,
+      "At_risk_loss": 748,
+      "Recovery_rate": 0.23529411764705882,
+      "Loss_onset": 153,
+      "Still_profit": 1981,
+      "At_risk_profit": 2134,
+      "Loss_onset_rate": 0.07169634489222118,
+      "Zero_related": 1587
+    },
+    {
+      "Scenario": "Alternate Profit Attributable",
+      "Pairs": 4466,
+      "Firms": 762,
+      "Recovery": 437,
+      "Still_loss": 873,
+      "At_risk_loss": 1310,
+      "Recovery_rate": 0.333587786259542,
+      "Loss_onset": 400,
+      "Still_profit": 2748,
+      "At_risk_profit": 3148,
+      "Loss_onset_rate": 0.12706480304955528,
+      "Zero_related": 8
+    }
+  ],
+  "Followup_status": {
+    "Rugi": 112,
+    "Laba": 234,
+    "Nol": 1
+  },
+  "Followup_missing_reasons": {
+    "Administrative end after 2026Q3": 46,
+    "Next quarter missing within observed window": 33
+  },
+  "Bootstrap": {
+    "B": 2000,
+    "seed": 20261111,
+    "method": "Firm-cluster percentile bootstrap, ticker-level, observed sample",
+    "Recovery_rate_CI95": [
+      0.30035490108930424,
+      0.36333615345422016
+    ],
+    "Loss_onset_rate_CI95": [
+      0.10868129030895356,
+      0.13607002930789228
+    ],
+    "Descriptive_probability_gap_CI95": [
+      0.17889974759911176,
+      0.2419889108001483
+    ]
+  },
+  "Flag_types": {
+    "M01_modified_from_first_vintage": 274,
+    "M03_near_zero_quarterly_profit_le_0p1pct_assets": 358,
+    "M05_attributable_profit_sign_differs": 68,
+    "M02_negative_quarterly_sales_if_YTD": 47,
+    "M06_Q4_FS_type_not_A": 20,
+    "M04_quarterly_profit_gt_assets": 4
+  },
+  "Unit_warning": "GOTO and GOTOM same issuer financials in 8 quarters; keep ticker baseline and predefine entity-level scenario",
+  "YTD_warning": "Profit for Period YTD is an assumption, not independently established by monthly dataset alone",
+  "Vintages_warning": "Snapshot provenance metadata insufficient to reconstruct all official restatements",
+  "Risk_set_warning": "Both main risk sets exclude exact zeros; conditional rates have different denominators"
+}

@@ -1,0 +1,7 @@
+﻿Flag,Flagged_Rows,Distinct_Tickers
+M01_modified_from_first_vintage,274,267
+M02_negative_quarterly_sales_if_YTD,47,46
+M03_near_zero_quarterly_profit_le_0p1pct_assets,358,213
+M04_quarterly_profit_gt_assets,4,4
+M05_attributable_profit_sign_differs,68,54
+M06_Q4_FS_type_not_A,20,20
